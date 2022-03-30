@@ -5,15 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/purple_500"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:elevation="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/netflixlogo"
+                android:scaleType="fitXY"/>
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.viewpager2.widget.ViewPager2
@@ -29,20 +54,275 @@
                 android:layout_height="wrap_content"
                 android:text="Trending Now"
                 android:textColor="#fff"
-                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:orientation="horizontal"
-                android:layout_marginLeft="32dp">
+                android:layout_marginStart="32dp">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide1" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide2" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/aslide" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/bslide" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/cslide" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/dslide" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Web Shows"
+                android:textColor="#fff"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="32dp">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck,SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide1" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide1" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide1" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide1" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Release"
+                android:textColor="#fff"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="32dp">
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    tools:ignore="SpeakableTextPresentCheck">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/dslide" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide2" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/aslide" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide1" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide1" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img" />
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginEnd="10dp"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/slide1" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trending Now"
+                android:textColor="#fff"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="32dp">
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
                     <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <ImageView
@@ -62,81 +342,6 @@
                             android:layout_height="match_parent"
                             android:scaleType="fitXY"
                             android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide2"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/aslide"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/bslide"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/cslide"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/dslide"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/img"/>
-
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trending Now"
-                android:textColor="#fff"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:orientation="horizontal"
-                android:layout_marginLeft="32dp">
-
-                <HorizontalScrollView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/img"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide1"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
                             android:src="@drawable/img"/>
                         <ImageView
                             android:layout_width="100dp"
@@ -177,172 +382,22 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Trending Now"
+                android:text="Popular"
                 android:textColor="#fff"
-                android:layout_marginLeft="32dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginBottom="10dp"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="125dp"
                 android:orientation="horizontal"
-                android:layout_marginLeft="32dp">
+                android:layout_marginStart="32dp">
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent">
                     <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/dslide"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide2"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/aslide"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide1"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/img"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide1"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/img"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide1"/>
-
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trending Now"
-                android:textColor="#fff"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:orientation="horizontal"
-                android:layout_marginLeft="32dp">
-
-                <HorizontalScrollView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/img"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide1"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/img"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide1"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/img"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide1"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/img"/>
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="match_parent"
-                            android:scaleType="fitXY"
-                            android:layout_marginEnd="10dp"
-                            android:src="@drawable/slide1"/>
-
-                    </LinearLayout>
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Trending Now"
-                android:textColor="#fff"
-                android:layout_marginLeft="32dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="125dp"
-                android:orientation="horizontal"
-                android:layout_marginLeft="32dp">
-
-                <HorizontalScrollView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent">
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
                         <ImageView
