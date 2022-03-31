@@ -17,7 +17,7 @@
         <activity
             android:name=".SignInActivity"
             android:exported="true"
-            android:parentActivityName=".IntroductionActivity"></activity>
+            android:parentActivityName=".IntroductionActivity"/>
         <activity
             android:name=".IntroductionActivity"
             android:exported="true" />

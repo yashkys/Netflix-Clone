@@ -121,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
     private void gotoUrl(String s) {
         Uri uri = Uri.parse(s);
         startActivity(new Intent(Intent.ACTION_VIEW,uri));
-        return;
     }
 
 }
